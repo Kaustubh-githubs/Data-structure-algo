@@ -5,6 +5,12 @@ using namespace std;
 
 int linearSearch(vector<int> vec, int find)
 {
+  for (int i = 0; i < vec.size(); i++) {
+   if(vec[i] == find)
+     return i;
+  }
+  return -1;
+    
 }
 
 void show(vector<int> vec)
