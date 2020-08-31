@@ -13,7 +13,7 @@ void swapElements(int *first, int *second)
 
 void bubbleSort(vector<int> &v, int len)
 {
-// this is the base case
+  // this is the base case
   if (len == 1)
     return;
 
@@ -22,8 +22,8 @@ void bubbleSort(vector<int> &v, int len)
     if (v[i] > v[i + 1])
       swapElements(&v[i], &v[i + 1]);
   }
-//   this is the recursive call
-//   by reducing the length by 1 every time 
+  //   this is the recursive call
+  //   by reducing the length by 1 every time
   bubbleSort(v, len - 1);
 }
 
@@ -34,7 +34,6 @@ void show(vector<int> vec, int len)
   {
     cout << *it << " ";
   }
-  cout << "\n";
 }
 
 int main()
