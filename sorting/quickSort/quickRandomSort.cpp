@@ -12,6 +12,10 @@ void swap(int *a, int *b)
   *b = temp;
 }
 
+
+// this is the main function of the quicksort algorithms
+// rest is just the recursive function 
+// with base case and recursive call
 // Partitioning the array on the basis of values at high as pivot value.
 int Partition(int a[], int low, int high)
 {
@@ -35,6 +39,7 @@ int Partition(int a[], int low, int high)
 }
 
 // Random selection of pivot.
+// we can skip this function and directely make pviot as the last element of the array 
 int RandomPivotPartition(int a[], int low, int high)
 {
   int pvt, n, temp;
